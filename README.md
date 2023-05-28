@@ -1,8 +1,8 @@
-# mdoctor-server
+# MDoctor-server
 
 Instant markdown server
 
-md-server developed to getting integreted with [MDoctor](https://github.com/yazilimcimekani/mdoctor). It's a simple markdown server that can be used for instant previewing markdown files.
+MDoctor-server developed to getting integreted with [MDoctor](https://github.com/yazilimcimekani/mdoctor). It's a simple markdown server that can be used for instant previewing markdown files.
 
 ## Installation
 
@@ -12,10 +12,12 @@ md-server developed to getting integreted with [MDoctor](https://github.com/yazi
 git clone git@github.com:yazilimcimekani/mdoctor-server.git
 ```
 
-### Install
+### Build
+
+Install [Just](https://github.com/casey/just) and run:
 
 ```shell
-yarn tsc
+just build
 ```
 
 ### Instant Preview
@@ -23,3 +25,15 @@ yarn tsc
 ```shell
 yarn preview
 ```
+
+### Run
+
+```shell
+just run
+```
+
+### License
+
+[GPL-3](LICENSE)
+
+Made with ❤️ by [Yazılımcı Mekanı](https://discord.gg/yazilimcimekani) for [MDoctor](https://github.com/yazilimcimekani/mdoctor)
