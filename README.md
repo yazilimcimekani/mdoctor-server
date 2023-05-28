@@ -1,4 +1,4 @@
-# md-server
+# mdoctor-server
 
 Instant markdown server
 
@@ -9,7 +9,7 @@ md-server developed to getting integreted with [MDoctor](https://github.com/yazi
 ### Clone
 
 ```shell
-git clone git@github.com:yazilimcimekani/md-server.git
+git clone git@github.com:yazilimcimekani/mdoctor-server.git
 ```
 
 ### Install
