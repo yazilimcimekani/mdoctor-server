@@ -17,6 +17,7 @@ class App {
         this.express = express()
         this.express.set("view engine", "ejs")
         this.mountRoutes()
+        this.express.use(express.static(__dirname + '/public'));
     }
 
     private readMarkdown(fileName:string): string {
