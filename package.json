@@ -1,13 +1,17 @@
 {
-  "name": "md-server",
+  "name": "mdoctor-server",
   "version": "1.0.0",
-  "description": "",
+  "description": "Instant markdown server",
   "main": "index.ts",
   "scripts": {
     "preview": "ts-node ."
   },
   "keywords": [],
-  "author": "",
+  "author": {
+    "name": "Yazılımcı Mekanı Dev Team",
+    "email": "github@yazilimcimekani.com",
+    "url": "https://yazilimcimekani.github.io"
+  },
   "license": "ISC",
   "devDependencies": {
     "@types/express": "^4.17.17",
