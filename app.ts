@@ -10,7 +10,7 @@ const md = new MarkdownIt({
 
 class App {
     public express: Express
-    fileName: String
+    fileName: string
 
     constructor() {
         this.fileName = "README.md"
@@ -19,8 +19,8 @@ class App {
         this.mountRoutes()
     }
 
-    private readMarkdown(fileName:String): string {
-        let data = readFileSync(fileName.toString(), "utf8")
+    private readMarkdown(fileName:string): string {
+        let data = readFileSync(fileName, "utf8")
         return data
     }
 
