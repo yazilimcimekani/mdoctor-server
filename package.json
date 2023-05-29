@@ -4,7 +4,7 @@
   "description": "Instant markdown server",
   "main": "index.ts",
   "scripts": {
-    "preview": "ts-node ."
+    "dev": "ts-node ."
   },
   "keywords": [],
   "author": {
