@@ -1,7 +1,9 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+        'Segoe UI Emoji';
+}
+
 body {
-    background-color: #4976ca;
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     margin: 0;
     margin-top: 10px;
@@ -9,7 +11,7 @@ body {
     padding: 0;
 }
 
-h1::after{
+h1::after {
     content: '';
     display: block;
     width: 100%;
@@ -20,13 +22,22 @@ h1::after{
 
 a {
     text-decoration: none;
-    color: #1750ca;
+    color: red;
 }
 
-code{
+code {
     display: block;
     background-color: #5e5b5b;
     color: #fff;
     padding: 10px;
     border-radius: 2px;
+}
+
+.dark-theme {
+    background-color: rgb(37, 37, 90);
+    color: #fff;
+}
+
+.light-theme {
+    background-color: wheat;
 }

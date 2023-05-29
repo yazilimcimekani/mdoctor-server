@@ -7,7 +7,13 @@
         <title>MDoctor - Server</title>
         <link href="style.css" rel="stylesheet" type="text/css" />
     </head>
-    <body>
+    <body id="body" class="dark-theme">
+        <script src="script.js"></script>
+        <div>
+            <button onclick="switchTheme()" id="theme-switch-button">
+                Light Theme
+            </button>
+        </div>
         <%- content %>
     </body>
 </html>
