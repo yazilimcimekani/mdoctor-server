@@ -17,10 +17,10 @@ class App {
         this.express = express()
         this.express.set("view engine", "ejs")
         this.mountRoutes()
-        this.express.use(express.static(__dirname + '/public'));
+        this.express.use(express.static(__dirname + "/public"))
     }
 
-    private readMarkdown(fileName:string): string {
+    private readMarkdown(fileName: string): string {
         let data = readFileSync(fileName, "utf8")
         return data
     }
