@@ -10,8 +10,8 @@ build:
   if (Test-Path -Path dist) {
   @echo "Removing existing dist folder"
   @echo "You can press return to accept"
-	rmdir dist 
-	}
+  rmdir dist 
+  }
   @yarn tsc
   mkdir dist/public
   cp -r public/* dist/public
