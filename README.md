@@ -23,7 +23,7 @@ just build
 ### Instant Preview
 
 ```shell
-yarn preview
+just preview
 ```
 
 ### Run
