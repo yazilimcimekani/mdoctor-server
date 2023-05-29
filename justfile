@@ -6,9 +6,12 @@ readme:
   @echo "You can use 'just -l' for more information."
 
 build:
-  @echo "Removing existing dist folder"
+  
+  if (Test-Path -Path dist) {
+	@echo "Removing existing dist folder"
   @echo "You can press return to accept"
-  if (Test-Path -Path dist) { rmdir dist }
+	rmdir dist 
+	}
   @yarn tsc
   mkdir dist/public
   cp -r public/* dist/public
