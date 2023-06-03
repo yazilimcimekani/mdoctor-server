@@ -11,8 +11,8 @@ install:
 build: install
   if (Test-Path -Path dist) { rmdir dist }
   @yarn tsc
-  mkdir dist/public
-  cp -r public/* dist/public
+  @mkdir dist/public
+  @cp -r public/* dist/public
 
 dev:
   @start http://localhost:3000
