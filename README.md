@@ -20,16 +20,20 @@ Install [Just](https://github.com/casey/just) and run:
 just build
 ```
 
-### Instant Preview
+### Start
+
+You can start the compiled server with:
 
 ```shell
-just preview
+just start
 ```
 
-### Run
+### Instant Preview
+
+You can start the currently served markdown file with:
 
 ```shell
-just run
+just dev
 ```
 
 ### License
