@@ -1,8 +1,10 @@
 set shell := ["powershell.exe", "-c"]
 
 readme:
-  @echo "This project created to implemented with mdoctor."
+  @echo "This project created to implemented with MDoctor."
   @echo "Writen in typescript. Please use 'just build' command to build it."
+  @echo "Then use 'just start' command to start compiled server."
+  @echo " "
   @echo "You can use 'just -l' for more information."
 
 install:
@@ -18,5 +20,5 @@ dev:
   @start http://localhost:3000
   @yarn dev
 
-run:
-  node dist/index.js
+start:
+  @yarn start

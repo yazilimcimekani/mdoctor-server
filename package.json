@@ -4,6 +4,7 @@
   "description": "Instant markdown server",
   "main": "index.ts",
   "scripts": {
+    "start": "node dist/index.js",
     "dev": "ts-node ."
   },
   "keywords": [],
