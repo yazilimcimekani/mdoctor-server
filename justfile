@@ -5,12 +5,11 @@ readme:
   @echo "Writen in typescript. Please use 'just build' command to build it."
   @echo "You can use 'just -l' for more information."
 
-build:
-  if (Test-Path -Path dist) {
-  @echo "Removing existing dist folder"
-  @echo "You can press return to accept"
-  rmdir dist 
-  }
+install:
+  @yarn
+
+build: install
+  if (Test-Path -Path dist) { rmdir dist }
   @yarn tsc
   mkdir dist/public
   cp -r public/* dist/public
