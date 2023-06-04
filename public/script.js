@@ -3,17 +3,10 @@ window.onload = () => {
 }
 
 function switchTheme() {
-    let themeSwitchButton = document.getElementById('theme-switch-button')
-    let body = document.getElementById('body')
-    let isLightTheme = document.getElementById('body').classList.contains('light-theme') ? true : false
+    const body = document.body;
+    const themeIcon = document.getElementById('theme-icon');
 
-    if (isLightTheme) {
-        body.classList.remove('light-theme')
-        body.classList.add('dark-theme')
-        themeSwitchButton.textContent = 'Light Theme'
-    } else {
-        body.classList.remove('dark-theme')
-        body.classList.add('light-theme')
-        themeSwitchButton.textContent = 'Dark Theme'
-    }
+    body.classList.toggle('light-theme');
+    themeIcon.classList.toggle('fa-sun');
+    themeIcon.classList.toggle('fa-moon');
 }
