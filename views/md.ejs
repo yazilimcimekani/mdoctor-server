@@ -5,15 +5,25 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>MDoctor - Server</title>
-        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link href="./style.css" rel="stylesheet" type="text/css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
     </head>
-    <body id="body" class="dark-theme">
-        <script src="script.js"></script>
-        <div>
-            <button onclick="switchTheme()" id="theme-switch-button">
-                Light Theme
-            </button>
+    <body id="body">
+        <script src="./script.js"></script>
+        <div class="container">
+            <div class="theme">
+                <button onclick="switchTheme()" id="theme-switch-button">
+                    <i id="theme-icon" class="fa-solid fa-sun"></i>
+                </button>
+                <button onclick="exportAsPdf()" id="theme-switch-button">
+                    <i class="fa-solid fa-file-export"></i>
+                </button>
+            </div>
+            <div class="line"></div>
+            <div id="md-content"><%- content %></div>
         </div>
-        <%- content %>
     </body>
 </html>

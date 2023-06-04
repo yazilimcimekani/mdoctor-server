@@ -69,27 +69,6 @@ h1 {
   margin: 0px;
 }
 
-.made {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.made::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 0.1px;
-  background-color: #2b3340;
-}
-
-.made p {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 5px;
-}
-
 code {
   display: block;
   background-color: #353941;
@@ -98,14 +77,6 @@ code {
   border-radius: 5px;
   width: 70%;
   overflow-x: auto;
-}
-
-.token {
-  color: #64ceff;
-}
-
-.light-theme .token {
-  color: #0083c0;
 }
 
 .theme {
