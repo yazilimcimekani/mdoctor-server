@@ -11,6 +11,8 @@ build:
   @yarn tsc
   @mkdir dist/public
   @cp -r public/* dist/public
+  @mkdir dist/views
+  @cp -r views/* dist/views 
 
 dev:
   @start http://localhost:3000
