@@ -6,7 +6,7 @@ readme:
 install:
   @yarn
 
-build: install
+build:
   if (Test-Path -Path dist) { rmdir dist }
   @yarn tsc
   @mkdir dist/public
