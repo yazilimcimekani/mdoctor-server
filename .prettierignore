@@ -1,7 +1,6 @@
 ## directories to ignore
 node_modules
 dist
-docs
 
 ## file extensions to ignore
 *.png
@@ -16,12 +15,7 @@ docs
 ## files to ignore
 package.json
 package-lock.json
-.prettierrc
 .gitignore
 .gitmodules
 .env.example
 Dockerfile
-docker-compose.yml
-docker-compose.dev.yml
-docker-compose.prod.yml
-docker-compose.test.yml
