@@ -1,11 +1,7 @@
 set shell := ["powershell.exe", "-c"]
 
 readme:
-  @echo "This project created to implemented with MDoctor."
-  @echo "Writen in typescript. Please use 'just build' command to build it."
-  @echo "Then use 'just start' command to start compiled server."
-  @echo " "
-  @echo "You can use 'just -l' for more information."
+  @just -l
 
 install:
   @yarn
