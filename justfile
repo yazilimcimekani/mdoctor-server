@@ -18,3 +18,9 @@ dev:
 
 start:
   @yarn start
+
+format-check:
+  @yarn format:check
+
+format:
+  @yarn format
