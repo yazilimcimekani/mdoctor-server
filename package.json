@@ -5,7 +5,9 @@
   "main": "index.ts",
   "scripts": {
     "start": "node dist/index.js",
-    "dev": "ts-node ."
+    "dev": "ts-node .",
+    "format:check": "prettier --check .", 
+    "format": "prettier --write ."
   },
   "keywords": [],
   "author": {
@@ -17,6 +19,7 @@
   "devDependencies": {
     "@types/express": "^4.17.17",
     "@types/node": "^20.2.1",
+    "prettier": "2.8.3",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.4"
   },
