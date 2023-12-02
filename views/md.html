@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MDoctor - Server</title>
-    <link href="./style.css" rel="stylesheet" type="text/css" />
+    <link href="public/style.css" rel="stylesheet" type="text/css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="public/favicon.ico" type="image/x-icon" />
   </head>
   <body id="body">
-    <script src="./script.js"></script>
+    <script src="public/script.js"></script>
     <div class="container">
       <div class="theme">
         <button onclick="switchTheme()" id="theme-switch-button">
@@ -24,7 +24,9 @@
         </button>
       </div>
       <div class="line"></div>
-      <div id="md-content"></div>
+      <div id="md-content">
+        %s
+      </div>
     </div>
   </body>
 </html>
