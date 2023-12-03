@@ -1,20 +1,14 @@
-set shell := ["powershell.exe", "-c"]
-
 readme:
   @just -l
 
-install:
-  @yarn
+tidy:
+  @go mod tidy
 
-build: install
-  if (Test-Path -Path dist) { rmdir dist }
-  @yarn tsc
-  @mkdir dist/public
-  @cp -r public/* dist/public
+run:
+  @go run main.go
 
-dev:
-  @start http://localhost:3000
-  @yarn dev
+build:
+  @go build main.go
 
-start:
-  @yarn start
+clean:
+  if [ -e main ]; then rm main; fi
