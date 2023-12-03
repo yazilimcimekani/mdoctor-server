@@ -1,3 +1,3 @@
-module github.com/yazilimcimekani/markdown-server
+module github.com/yazilimcimekani/mdoctor-server
 
 go 1.21.4
