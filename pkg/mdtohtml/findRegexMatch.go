@@ -14,7 +14,7 @@ func FindRegexMatch(md string) (string, string) {
 		Heading3 string
 		Heading2 string
 		Heading1 string
-		Text string
+		Text     string
 	}
 
 	patterns := RegexPatterns{
@@ -24,7 +24,7 @@ func FindRegexMatch(md string) (string, string) {
 		Heading3: `^###+\s(.+)$`,
 		Heading2: `^##+\s(.+)$`,
 		Heading1: `^#+\s(.+)$`,
-		Text: `^(.+)$`,
+		Text:     `^(.+)$`,
 	}
 	val := reflect.ValueOf(patterns)
 	typ := reflect.TypeOf(patterns)

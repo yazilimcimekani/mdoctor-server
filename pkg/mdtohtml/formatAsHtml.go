@@ -13,7 +13,7 @@ func FormatAsHtml(tagName string, content string) string {
 		Heading4 string
 		Heading5 string
 		Heading6 string
-		Text string
+		Text     string
 	}
 
 	htmlTags := HtmlTags{
@@ -23,14 +23,14 @@ func FormatAsHtml(tagName string, content string) string {
 		Heading4: "<h4>%s</h4>",
 		Heading5: "<h5>%s</h5>",
 		Heading6: "<h6>%s</h6>",
-		Text: "<p>%s</p>",
+		Text:     "<p>%s</p>",
 	}
 
 	val := reflect.ValueOf(htmlTags)
 	typ := reflect.TypeOf(htmlTags)
 
 	var result string
-	
+
 	for i := 0; i < val.NumField(); i++ {
 		fieldName := typ.Field(i).Name
 		fieldValue := val.Field(i).Interface()
@@ -42,4 +42,3 @@ func FormatAsHtml(tagName string, content string) string {
 
 	return result
 }
-

@@ -4,7 +4,6 @@ import (
 	"strings"
 )
 
-
 func MarkdownToHtml(md string) string {
 	var html string
 
