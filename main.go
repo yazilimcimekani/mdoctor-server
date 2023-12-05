@@ -1,13 +1,11 @@
 package main
 
 import (
-	"fmt"
 	"log"
-	"net/http"
 
 	"github.com/joho/godotenv"
-	"github.com/yazilimcimekani/mdoctor-server/pkg/controllers"
 	"github.com/yazilimcimekani/mdoctor-server/pkg/env"
+	"github.com/yazilimcimekani/mdoctor-server/pkg/server"
 )
 
 func main() {
@@ -16,14 +14,9 @@ func main() {
 	if envErr != nil {
 		log.Fatal("Error loading .env file")
 	}
+
+	// If the port is not set, use the default port
 	port := env.GetEnv("PORT", "8080")
 
-	// Define the handlers
-	http.Handle("/public/", http.StripPrefix("/public/", http.FileServer(http.Dir("public"))))
-	http.HandleFunc("/markdown", controllers.Markdown())
-
-	// Start the server on given port
-	startMessage := fmt.Sprintf("Server started on http://localhost:%s", port)
-	log.Println(startMessage)
-	log.Fatal(http.ListenAndServe(fmt.Sprintf(":%s", port), nil))
+	server.Start(port)
 }
